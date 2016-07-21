@@ -1,0 +1,124 @@
+.site-main.surface-container .postArticle-content p {
+	line-height: 1.75em;
+}
+
+.site-main.surface-container .homeContainer,
+.site-main.surface-container .screenContent.surface-content .u-backgroundGrayLightest {
+	background: none !important;
+}
+
+.site-main.surface-container .js-profileHeader {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.site-main.surface-container .cardChromeless {
+	background: none !important;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+	border-radius: 0 !important;
+	box-shadow: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.site-main.surface-container .responsesWrapper.supplementalPostContent {
+	border-top: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.site-main.surface-container .streamItem .container,
+.site-main.surface-container .streamItem-card--hPadding20,
+.site-main.surface-container .compressedPostListItem,
+.site-main.surface-container .responsesStream-showOtherResponses,
+.site-main.surface-container .streamItemConversationItem,
+.site-main.surface-container .responsesStream-showOtherResponses > .row > .col {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.site-main.surface-container .card2.card2--responseContext {
+	box-shadow: none;
+}
+
+.site-main.surface-container .row.streamItemConversation-inner {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+/* For the plug-in */
+
+html[data-overflow-hidden="hidden"], html[data-overflow-hidden="hidden"] body {
+	overflow: hidden;
+}
+
+#JNMPA-UI-container, #JNMPA-UI-container * {
+	box-sizing: border-box;
+}
+
+#JNMPA-UI-container, #JNMPA-UI-container_inner {
+	height: 100vh;
+}
+
+#JNMPA-UI-container {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 8888;
+}
+
+#JNMPA-UI-content {
+	font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+}
+#JNMPA-UI-content_inner {
+	padding: 30px;
+	margin: 0 auto;
+}
+
+
+// ----------------------------
+
+
+#JNMPA-UI-controls {
+	display: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100vw;
+	height: 70px;
+}
+
+#JNMPA-UI-controls-close {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	border: 1px solid #AAA;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+#JNMPA-UI-controls-close:hover {
+	border: 1px solid #333;
+}
+
+#JNMPA-UI-controls-paging {
+	font-size: 0px;
+	text-align: center;
+}
+
+#JNMPA-UI-controls-paging > * {
+	font-size: 18px;
+	display: inline-block;
+	padding: 15px;
+}
+
+#JNMPA-UI-controls-paging-current {
+	font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman', Times, serif;
+	color: #777;
+	width: 160px;
+}
+
+#JNMPA-UI-controls-paging-prev, #JNMPA-UI-controls-paging-next {
+	// font-size: 28px;
+	cursor: pointer;
+}
