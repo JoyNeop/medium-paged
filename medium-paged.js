@@ -124,7 +124,7 @@ window.MEDIUM_PAGED_APP = {
 				var st2 = document.createElement('link');
 				st2.setAttribute('id', 'JNMPA-CSS-Global_2');
 				st2.setAttribute('rel', 'stylesheet');
-				st2.setAttribute('href', 'https://cdn.rawgit.com/JoyNeop/medium-paged/master/meidum-paged.css');
+				st2.setAttribute('href', 'https://cdn.rawgit.com/JoyNeop/medium-paged/master/medium-paged.css');
 				document.head.appendChild(st2);
 			})();
 
