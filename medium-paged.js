@@ -11,7 +11,6 @@ window.MEDIUM_PAGED_APP = {
 		div.innerHTML = [
 			'<div id="JNMPA-UI-container_inner" style="">',
 				'<div id="JNMPA-UI-content" class="postArticle-content" style="overflow: scroll;">',
-					// <div id="JNMPA-UI-content_inner" style="margin: 0 auto;"></div>
 				'</div>',
 				'<div id="JNMPA-UI-controls">',
 					'<div id="JNMPA-UI-controls_inner">',
@@ -50,8 +49,6 @@ window.MEDIUM_PAGED_APP = {
 				var innerhtml_ = [].map.call(nodes, function (n) {
 					return n.outerHTML;
 				}).join('');
-				console.log('innerhtml_:');
-				console.log(innerhtml_);
 				return innerhtml_;
 			})(MEDIUM_PAGED_APP.contentSectionInner);
 			MEDIUM_PAGED_APP.contentSectionOuter.appendChild(MEDIUM_PAGED_APP.imaginaryOriginalContent);
@@ -75,7 +72,6 @@ window.MEDIUM_PAGED_APP = {
 				};
 				return pagesData;
 			})(MEDIUM_PAGED_APP.contentSectionInner, MEDIUM_PAGED_APP.imaginaryOriginalContent.children);
-			console.log(MEDIUM_PAGED_APP.pagesData);
 
 			// Put into pages (DOM)
 			MEDIUM_PAGED_APP.pagesDOM = (function (pagesData) {
@@ -93,8 +89,6 @@ window.MEDIUM_PAGED_APP = {
 				});
 				return pagesDOM_;
 			})(MEDIUM_PAGED_APP.pagesData);
-			console.log(MEDIUM_PAGED_APP.pagesDOM);
-			// return 0;
 
 			// Append into body
 			document.body.appendChild(MEDIUM_PAGED_APP.ui);
@@ -195,6 +189,4 @@ window.MEDIUM_PAGED_APP = {
 	};
 })();
 
-window.setTimeout(MEDIUM_PAGED_APP.methods.init, 2000);
-
-// console.log(MEDIUM_PAGED_APP.pagesDOM);
+MEDIUM_PAGED_APP.methods.init();
